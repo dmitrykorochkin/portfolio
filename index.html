@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Korochkin DS</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Playfair+Display+SC:wght@900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     
@@ -19,18 +20,37 @@
                 </div>
                 <nav class="nav">
                     <ul>
-                        <li class="link"><a href="#">Портфолио</a></li>
-                        <li class="link"><a href="#">Обо мне</a></li>
-                        <li class="link"><a href="#">Контакты</a></li>
+                        <li class="link"><a href="#portfolio">Портфолио</a></li>
+                        <li class="link"><a href="#about">Обо мне</a></li>
+                        <li class="link"><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
+
+                <div class="burger-menu ">
+                
+                    <a href="#" class="burger-menu__button">
+                        <span class="burger-menu__lines" ></span>
+                    </a>
+                    
+                    <nav class="burger-menu__nav">
+                        <a href="#portfolio" class="burger-menu__link">Потфолио</a>
+                        <a href="#about" class="burger-menu__link">Обо мне</a>
+                        <a href="#contacts" class="burger-menu__link">Контакты</a>
+                    </nav>
+    
+                    <div class="burger-menu__overlay"></div>
+                </div>
+
             </div>
+
+
+           
+
+           
 
          <div class="header_top">
             <div class="header_top-desc">
-                <div class="header_title"><span>Портфолио</span>
-                    веб-дизайнера
-                    ниже</div>
+                <h1 class="header_title">Портфолио веб-дизайнера ниже</h1>
                     
                 <div class="btn"><a href="https://vk.com/disign_arz" target="_blank">Напиши мне</a></div>
             </div>
@@ -42,37 +62,37 @@
         </div>
     </header>
 
-    <section class="portfolio">
+     <section class="portfolio" id="portfolio">
         <div class="container">
-            <div class="portfolio_title">Портфолио</div>
+            <div class="portfolio_title"><a href="portfolio_design.html">Портфолио</a></div>
             <div class="portfolio_card">
             <div class="portfolio_card-item">
                 <div class="portfolio_card-item-icon">
                     <img class="card_icon" src="img/icon/web-site.svg" alt="">
                 </div>
-                <div class="portfolio_card-item-title"><a href="#">Дизайн cайта</a></div>
-                <div class="portfolio_card-item-btn"><a href="http://jsfiddle.net/y3jdkrhn/1/" target="_blank"></a></div>
+                <div class="portfolio_card-item-title"><a href="portfolio_design.html">Дизайн cайта</a></div>
+                <div class="portfolio_card-item-btn"><a href="portfolio_design.html" target="_blank"></a></div>
             </div>
             <div class="portfolio_card-item">
                 <div class="portfolio_card-item-icon">
                     <img class="card_icon" src="img/icon/web-programming.svg" alt="">
                 </div>
-                <div class="portfolio_card-item-title"><a href="#">Верстка макета</a></div>
-                <div class="portfolio_card-item-btn"><a href="http://jsfiddle.net/y3jdkrhn/1/" target="_blank"></a></div>
+                <div class="portfolio_card-item-title"><a href="developer.html">Верстка макета</a></div>
+                <div class="portfolio_card-item-btn"><a href="developer.html" target="_blank"></a></div>
             </div>
             <div class="portfolio_card-item">
                 <div class="portfolio_card-item-icon">
                     <img class="card_icon" src="img/icon/web-logo.svg" alt="">
                 </div>
-                <div class="portfolio_card-item-title"><a href="">Дизайн логотипа</a></div>
-                <div class="portfolio_card-item-btn"><a href="http://jsfiddle.net/y3jdkrhn/1/" target="_blank"></a></div>
+                <div class="portfolio_card-item-title"><a href="portfolio_logo.html">Дизайн логотипа</a></div>
+                <div class="portfolio_card-item-btn"><a href="portfolio_design.html" target="_blank"></a></div>
             </div>
         </div>
         
         </div> 
     </section> 
 
-    <section class="about">
+    <section class="about" id="about">
          <div class="container">
              <div class="about_title">Кто я такой</div>
              <div class="about_main">
@@ -97,7 +117,9 @@
         <div class="container">
             <div class="courses_title">Пройденные курсы</div>
             <div class="courses_main">
-                <div class="courses_text">Прошел курс по основам веб-дизанйна от онлайн школы wayup и ее основателя Андрея Гаврилова. Данный курс помог мне обрести увереность и получить те знания с которыми я могу сделать качественный дизайн, начиная от десктоп версии и заканчивая мобильной версией. 
+                <div class="courses_text">Прошел курс по основам веб-дизанйна от онлайн школы wayup и ее основателя Андрея Гаврилова. 
+                    <br><br>
+                    Данный курс помог мне обрести увереность и получить те знания с которыми я могу сделать качественный дизайн, начиная от десктоп версии и заканчивая мобильной версией. 
 
                 </div>
                 <div class="courses_photo">
@@ -107,7 +129,7 @@
         </div>
     </secition>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer_main">
                 <div class="logo logo_footer">Korochkin DS</div>
@@ -120,6 +142,11 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   <!--JQUERY-->
+    <script src="js/script.js"></script>
+
 </body>
 </html>
